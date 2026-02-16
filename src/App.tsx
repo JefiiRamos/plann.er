@@ -4,12 +4,17 @@ import {
 } from "react-router-dom";
 
 import { CreatTripPage } from "./pages/creat-trip";
+import { LandingPage } from "./pages/landing";
 import { TripDetailsPage } from "./pages/trip-details";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: < CreatTripPage />
+    element: <LandingPage />
+  },
+  {
+    path: "/criar",
+    element: <CreatTripPage />
   },
   {
     path: "/trips/:tripId",
